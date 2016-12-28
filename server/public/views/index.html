@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="vendors/angular.js"></script>
+    <script type="text/javascript" src="vendors/angular-route.min.js"></script>
+    <script type="text/javascript" src="vendors/jquery-3.1.1.min.js"></script>
+    <!-- <script type="text/javascript" src="vendors/picturefill.min.js"></script> -->
+    <script type="text/javascript" src="scripts/script.js"></script>
+    <link rel="stylesheet" href="vendors/bootstrap.min.css" charset="utf-8">
+    <link rel="stylesheet" href="css/stylesheet.css" charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:600,800' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Arima+Madurai:900" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico"/>
+    <base href="/home">
+    <title>Monumental Muffins</title>
+  </head>
+
+  <body>
+
+       <div ng-include="'views/partials/header.html'"></div>
+
+       <main ng-view autoscroll></main>
+
+       <div ng-include="'views/partials/footer.html'"></div>
+
+  </body>
+</html>
