@@ -1,0 +1,48 @@
+html {
+  font-size: 20px;
+  font-family: 'BenchNine', sans-serif;
+}
+
+body {
+  font-size: 100%;
+  font-family: 'BenchNine', sans-serif;
+}
+
+.navbar {
+  background-color: #6B5D4D;
+}
+
+.navbar-brand {
+  font-size: 2em;
+  transform: scale(0.5,1);
+  color: #FBEED3;
+  font-family: 'Cinzel Decorative', cursive;
+  margin: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+.navbar-nav.navbar-right li a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #B0A18F;
+    padding-right: 50px;
+    list-style: none;
+}
+
+.navbar-nav.navbar-right li a:active {
+
+}
+.navbar-nav.navbar-right li a:hover {
+
+}
+
+
+/* Phone Styles */
+@media screen and (max-width: 320px) {
+        body {
+               font-size: 100%;
+         }
+   }

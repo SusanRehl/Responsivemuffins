@@ -2,7 +2,6 @@ var myApp = angular.module("myApp", ["ngRoute"]);
 
 myApp.controller("navCtrl", ["$scope", "$location", function($scope, $location){ // controller for navigation
 		$scope.isActive = function(route) {
-    console.log("location path is ", $location.path());
 		  return route === $location.path();
 		};
 }]);
@@ -33,17 +32,17 @@ myApp.config(["$routeProvider", "$locationProvider", function($routeProvider, $l
 	}]);
 
   myApp.controller("homeController", ["$scope", function($scope){
-      console.log("Loaded home controller");
+
   }]);
 
   myApp.controller("aboutController", ["$scope", function($scope){
-      console.log("Loaded about controller");
+
   }]);
 
   myApp.controller("contactController", ["$scope", function($scope){
-      console.log("Loaded contact controller");
+
   }]);
 
   myApp.controller("muffinsController", ["$scope", function($scope){
-      console.log("Loaded muffins controller");
+
   }]);
