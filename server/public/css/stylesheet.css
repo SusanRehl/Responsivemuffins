@@ -1,3 +1,5 @@
+/* Desktop Styles */
+
 html {
   font-size: 20px;
   font-family: 'BenchNine', sans-serif;
@@ -34,13 +36,6 @@ main {
   width: 900px;
   margin: -65px 0 0 -130px;
 }
-/*.navbar-brand {
-  font-size: 2em;
-  transform: scale(0.5,1);
-  color: #FBEED3;
-  font-family: 'Cinzel Decorative', cursive;
-  margin: 20px;
-}*/
 
 ul {
   list-style: none;
@@ -50,7 +45,7 @@ ul {
     margin-top: -40px;
 }
 
-.navbar-nav.navbar-right li a {
+a {
     text-decoration: none;
     font-size: 1.2em;
     color: #B0A18F;
@@ -58,13 +53,40 @@ ul {
     list-style: none;
 }
 
-.navbar-nav.navbar-right li a:active {
-
+a:hover {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #fbeed3;
+  padding-right: 50px;
+  list-style: none;
 }
-.navbar-nav.navbar-right li a:hover {
 
+a:active {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #B0A18F;
+  padding-right: 50px;
+  list-style: none;
 }
 
+a:focus {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #429398;
+  padding-right: 50px;
+  list-style: none;
+}
+
+.active {
+   font-family: 'BenchNine', sans-serif;
+   /*font-family: 'Cinzel Decorative', cursive;*/
+   /*font-size: 3em;*/
+   color: #429398;
+   text-decoration: none;
+   font-size: 1.2em;
+   padding-right: 50px;
+   list-style: none;
+}
 
 img,
 embed,
@@ -90,7 +112,18 @@ video {
 
 @media screen and (max-width: 320px) {
         body {
-               font-size: 100%;
+               font-size: 85%;
          }
+
+   }
+
+
+
+   /* Tablet Styles */
+
+   @media screen and (max-width: 768px) {
+        body {
+            font-size: 100%;
+        }
 
    }

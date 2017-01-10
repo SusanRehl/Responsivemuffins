@@ -1,10 +1,6 @@
 var myApp = angular.module("myApp", ["ngRoute"]);
 
-myApp.controller("navCtrl", ["$scope", "$location", function($scope, $location){ // controller for navigation
-		$scope.isActive = function(route) {
-		  return route === $location.path();
-		};
-}]);
+
 
 myApp.config(["$routeProvider", "$locationProvider", function($routeProvider, $locationProvider) {   //  controller for routes
 	console.log("in scripts in config function");
@@ -31,6 +27,14 @@ myApp.config(["$routeProvider", "$locationProvider", function($routeProvider, $l
     $locationProvider.html5Mode(true);
 	}]);
 
+
+	myApp.controller("navCtrl", ["$scope", "$location", function($scope, $location){ // controller for navigation
+			$scope.isActive = function(route) {
+			  return route === $location.path();
+			};
+	}]);
+
+	
   myApp.controller("homeController", ["$scope", function($scope){
 
   }]);
