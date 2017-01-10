@@ -8,20 +8,46 @@ body {
   font-family: 'BenchNine', sans-serif;
 }
 
+main {
+  margin-top: 130px;
+}
+
 .navbar {
   background-color: #6B5D4D;
 }
 
-.navbar-brand {
+.logo {
+  align: left;
+}
+
+.logoimage {
+  width: 5%;
+  height: 5%;
+  margin: 10px;
+}
+
+.logotext {
+  font-size: 2em;
+  transform: scale(0.5,1);
+  color: #FBEED3;
+  font-family: 'Cinzel Decorative', cursive;
+  width: 900px;
+  margin: -65px 0 0 -130px;
+}
+/*.navbar-brand {
   font-size: 2em;
   transform: scale(0.5,1);
   color: #FBEED3;
   font-family: 'Cinzel Decorative', cursive;
   margin: 20px;
-}
+}*/
 
 ul {
   list-style: none;
+}
+
+.navbar-right {
+    margin-top: -40px;
 }
 
 .navbar-nav.navbar-right li a {
@@ -40,9 +66,31 @@ ul {
 }
 
 
+img,
+embed,
+object,
+video {
+   max-width: 100%;
+}
+
+
 /* Phone Styles */
+
+@media
+   only screen and (-webkit-min-device-pixel-ratio: 1.5),
+   only screen and (min-device-pixel-ratio: 1.5) {
+     .logo {
+        /*background-image: url(logo@2x.png);*/
+        /*-webkit-background-size: 75px 75px;*/
+        /*background-size: 75px 75px*/
+      }
+
+  }
+
+
 @media screen and (max-width: 320px) {
         body {
                font-size: 100%;
          }
+
    }
