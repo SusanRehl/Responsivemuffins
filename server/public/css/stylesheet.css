@@ -15,11 +15,12 @@ main {
 }
 
 .navbar {
-  background-color: #6B5D4D;
+  /*background-color: #6B5D4D;*/
 }
 
 .logo {
   align: left;
+  background-color: #6B5D4D;
 }
 
 .logoimage {
@@ -43,6 +44,7 @@ ul {
 
 .navbar-right {
     margin-top: -40px;
+    background-color: #6B5D4D;
 }
 
 a {
@@ -50,7 +52,6 @@ a {
     font-size: 1.2em;
     color: #B0A18F;
     padding-right: 50px;
-    list-style: none;
 }
 
 a:hover {
@@ -58,7 +59,6 @@ a:hover {
   font-size: 1.2em;
   color: #fbeed3;
   padding-right: 50px;
-  list-style: none;
 }
 
 a:active {
@@ -66,7 +66,6 @@ a:active {
   font-size: 1.2em;
   color: #B0A18F;
   padding-right: 50px;
-  list-style: none;
 }
 
 a:focus {
@@ -74,18 +73,14 @@ a:focus {
   font-size: 1.2em;
   color: #429398;
   padding-right: 50px;
-  list-style: none;
 }
 
 .active {
    font-family: 'BenchNine', sans-serif;
-   /*font-family: 'Cinzel Decorative', cursive;*/
-   /*font-size: 3em;*/
    color: #429398;
    text-decoration: none;
    font-size: 1.2em;
    padding-right: 50px;
-   list-style: none;
 }
 
 img,
@@ -98,24 +93,77 @@ video {
 
 /* Phone Styles */
 
-@media
-   only screen and (-webkit-min-device-pixel-ratio: 1.5),
-   only screen and (min-device-pixel-ratio: 1.5) {
-     .logo {
-        /*background-image: url(logo@2x.png);*/
-        /*-webkit-background-size: 75px 75px;*/
-        /*background-size: 75px 75px*/
-      }
-
-  }
-
-
 @media screen and (max-width: 320px) {
         body {
                font-size: 85%;
          }
 
+         .logo {
+           align: center;
+           padding-bottom: 8%;
+           margin-bottom: -8%;
+           border-style: solid;
+           border-color: #6B5D4D #6B5D4D #429398 #6B5D4D;
+         }
+
+         .logoimage {
+           width: 20%;
+           height: 20%;
+           margin: 10px;
+         }
+
+         .logotext {
+           font-size: 1.5em;
+           transform: scale(0.5,1);
+           color: #FBEED3;
+           font-family: 'Cinzel Decorative', cursive;
+         }
+
+         .navbar-right {
+             margin: 8% 0 5% 0;
+             padding: 5% 0 1% 0;
+             text-align: center;
+             background-color: #DFCDB4;
+         }
+
+         li {
+           margin: 0 0 7% 0;
+         }
+
+         a {
+             color: #6B5D4D;
+             padding: 5% 2% 5% 0;
+         }
+
+         a:active {
+           color: #6B5D4D;
+           padding: 5% 2% 5% 0;
+         }
+
+         a:focus {
+           color: #429398;
+           padding: 5% 2% 5% 0;
+         }
+
+         .active {
+            color: #429398;
+            padding: 5% 2% 5% 0;
+         }
+
    }
+
+/* Phone retina images */
+   @media
+      only screen and (-webkit-min-device-pixel-ratio: 1.5),
+      only screen and (min-device-pixel-ratio: 1.5) {
+
+
+           /*background-image: url(logo@2x.png);*/
+           /*-webkit-background-size: 75px 75px;*/
+           /*background-size: 75px 75px*/
+
+
+     }
 
 
 
