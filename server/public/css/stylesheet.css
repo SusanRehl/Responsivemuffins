@@ -1,3 +1,7 @@
+@-ms-viewport {
+  width: device-width;
+}
+
 /* Desktop Styles */
 
 html {
@@ -15,7 +19,7 @@ main {
 }
 
 .navbar {
-  /*background-color: #6B5D4D;*/
+
 }
 
 .logo {
@@ -26,7 +30,7 @@ main {
 .logoimage {
   width: 5%;
   height: 5%;
-  margin: 10px;
+  margin: 1% 2% 3% 1%;
 }
 
 .logotext {
@@ -35,7 +39,7 @@ main {
   color: #FBEED3;
   font-family: 'Cinzel Decorative', cursive;
   width: 900px;
-  margin: -65px 0 0 -130px;
+  margin: 0;
 }
 
 ul {
@@ -150,6 +154,10 @@ video {
             padding: 5% 2% 5% 0;
          }
 
+         main {
+           margin-top: 330px;
+         }
+
    }
 
 /* Phone retina images */
@@ -173,5 +181,27 @@ video {
         body {
             font-size: 100%;
         }
+
+        .logo {
+          align: center;
+          padding-bottom: 8%;
+          margin-bottom: -8%;
+          border-style: solid;
+          /*border-color: #6B5D4D #6B5D4D #429398 #6B5D4D;*/
+        }
+
+        /*.logoimage {
+          width: 40%;
+          height: 40%;
+          margin: 10px;
+        }*/
+
+        .logotext {
+          font-size: 1.75em;
+          transform: scale(0.5,1);
+          color: #FBEED3;
+          font-family: 'Cinzel Decorative', cursive;
+        }
+
 
    }
