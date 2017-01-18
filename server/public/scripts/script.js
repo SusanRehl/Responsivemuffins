@@ -34,7 +34,7 @@ myApp.config(["$routeProvider", "$locationProvider", function($routeProvider, $l
 			};
 	}]);
 
-	
+
   myApp.controller("homeController", ["$scope", function($scope){
 
   }]);

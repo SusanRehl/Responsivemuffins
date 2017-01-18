@@ -15,6 +15,8 @@
     "bootstrap": "^3.3.7",
     "express": "^4.14.0",
     "jquery": "^3.1.1",
-    "nodemon": "^1.11.0"
+    "nodemon": "^1.11.0",
+    "picture": "^1.0.6",
+    "picturefill": "^3.0.2"
   }
 }
