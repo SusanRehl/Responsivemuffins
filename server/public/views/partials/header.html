@@ -1,37 +1,18 @@
 <nav class="navbar navbar-fixed-top">
 
     <div class="logo">
-      <!-- <img ng-src="/assets/mmlogo.png" class="logoimage" alt="Monumental Muffins logo"/> -->
 
-     <picture picturefill alt="Logo Monumental Muffins">
-        <!-- Smallest size first  -->
-       <source srcset = "/assets/mmlogoSM.png" pf-media="(max-width: 320px)"/>
-       <!-- Large size  -->
-       <source srcset = "/assets/mmlogoLG.png" pf-media="(max-width: 960px)"/>
-      <img srcset="/assets/mmlogoLG.png" alt="Logo Monumental Muffins"/>
+     <picture>
+        <!-- Smallest viewport size   -->
+       <source srcset = "/assets/mmlogoSM.png" media="(max-width: 320px)">
+       <!-- Large viewport size  -->
+       <source srcset = "/assets/mmlogoLG.png" media="(max-width: 960px)">
        <!-- fallback content for non-JS or non-media-query-supporting browser -->
+       <img srcset="/assets/mmlogoLG.png" alt="Logo Monumental Muffins"/>
        <noscript>
-         <img srcset="/assets/mmlogoLG.png" alt="Logo Monumental Muffins"/>
+         <img srcset="/assets/mmlogoLG.png" alt="Logo Monumental Muffins">
        </noscript>
      </picture>
-
-<!--
-     <span picture-fill data-alt="Logo Monumental Muffins">
-       <span pf-src="/assets/mmlogoSM.png" data-media="(min-width: 1px)"></span>
-       <span pf-src="/assets/mmlogoLG.png" data-media="(min-width: 321px)"></span>
-     </span> -->
-
-     <!-- <span picture-fill data-alt="Juicy hanger steak on a croissant.">
-       <span pf-src="images/sizes/steak-croissant.png"></span>
-       <span pf-src="images/sizes/steak-croissant-100.png" data-media="(min-width: 1px)"></span>
-       <span pf-src="images/sizes/steak-croissant-300.png" data-media="(min-width: 400px)"></span>
-       <span pf-src="images/sizes/steak-croissant-600.png" data-media="(min-width: 645px)"></span>
-       <span pf-src="images/sizes/steak-croissant-1024.png" data-media="(min-width: 960px)"></span>
-       <span pf-src="images/sizes/steak-croissant.png" data-media="(min-width: 1200px)"></span>
-     </span> -->
-
-
-
 
      <p class="logotext">Monumental Muffins</p>
      </div>
