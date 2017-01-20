@@ -6,7 +6,17 @@
     </section>
 
     <section>
-      <p>(map</p>)
+      <picture>
+         <!-- Smallest viewport size   -->
+        <source srcset = "/assets/map275.png" media="(max-width: 320px)">
+        <!-- Large viewport size  -->
+        <source srcset = "/assets/map.png" media="(max-width: 960px)">
+        <!-- fallback content for non-JS or non-media-query-supporting browser -->
+        <img srcset="/assets/map.png" alt="Banana Nut Muffin"/>
+        <noscript>
+          <img srcset="/assets/map.png" alt="Banana Nut Muffin">
+        </noscript>
+      </picture>
       <p>555 Main Street</p>
       <p>Hometown, MN 55555</p>
       <p></p>
