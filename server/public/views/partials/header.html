@@ -2,6 +2,11 @@
 
     <div class="logo">
 
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
      <picture>
         <!-- Smallest viewport size   -->
        <source srcset = "/assets/mmlogoSM.png" media="(max-width: 320px)">
@@ -15,16 +20,42 @@
      </picture>
 
      <p class="logotext">Monumental Muffins</p>
-  </div>
-
+  </div> <!-- end logo div -->
 
     <div ng-controller="navCtrl">
-      <ul class="navbar-nav navbar-right" > <!-- one line, flush right -->
-        <li><a ng-class="{ active: isActive('/home') }" href='/home'>Home</a></li>
-        <li><a ng-class="{ active: isActive('/muffins') }" href='/muffins'>Muffins</a></li>
-        <li><a ng-class="{ active: isActive('/contact') }" href='/contact'>Contact</a></li>
-        <li><a ng-class="{ active: isActive('/about') }" href='/about'>About</a></li>
-      </ul>
-    </div> <!-- end controller navCtrl -->
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="navbar-nav navbar-right">
+         <!-- one line, flush right -->
+          <li><a ng-class="{ active: isActive('/home') }" href='/home'>Home</a></li>
+          <li><a ng-class="{ active: isActive('/muffins') }" href='/muffins'>Muffins</a></li>
+          <li><a ng-class="{ active: isActive('/contact') }" href='/contact'>Contact</a></li>
+          <li><a ng-class="{ active: isActive('/about') }" href='/about'>About</a></li>
+        </ul>
+      </div>  <!-- end navbar -->
+    </div>  <!-- end controller navCtrl -->
+ </nav> <!-- end nav bar -->
 
- </nav>  <!-- end nav bar -->
+ <!-- <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Page 1</a></li>
+        <li><a href="#">Page 2</a></li>
+        <li><a href="#">Page 3</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Sign Up</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav> -->

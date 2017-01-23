@@ -38,7 +38,7 @@ ul {
 }
 
 .navbar-right {
-    margin: -60px 15px 20px;
+    margin: -60px 15px 20px 0;
     background-color: #6B5D4D;
 }
 
@@ -101,26 +101,57 @@ video {
 
 /* Tablet Styles */
 
-@media screen and (max-width: 800px) {
-     body {
-         font-size: 100%;
-     }
+@media screen and (max-width: 768px) {
 
      .logo {
        align: center;
-       padding-bottom: 8%;
        margin-bottom: -8%;
        border-style: solid;
        border-color: #6B5D4D #6B5D4D #429398 #6B5D4D;
      }
 
-
-     .logotext {
-       font-size: 1.75em;
-       transform: scale(0.5,1);
-       color: #FBEED3;
-       font-family: 'Cinzel Decorative', cursive;
+     .navbar-right {
+       margin: 61px -10px 0 0;
+       padding: 5px 0 5px 20px;
+       background-color: #DFCDB4;
+       height: 40px;
+       border-style: solid;
+       border-color: #DFCDB4 #DFCDB4 #429398 #DFCDB4;
      }
+
+     li {
+       width: 20px;
+       /*padding: -200px;*/
+       margin: 0 -20px 0 15px;
+     }
+
+     a {
+         color: #6B5D4D;
+         margin: 0 -20px;
+         /*padding: 5px -200px;*/
+     }
+
+     a:active {
+       color: #6B5D4D;
+       margin: 0 -20px;
+       /*padding: 5px -200px;*/
+     }
+
+     a:focus {
+       color: #429398;
+       margin: 0 -20px;
+       /*padding: 5px -200px;*/
+     }
+
+     .active {
+        color: #429398;
+        margin: 0 -20px;
+     }
+
+    main {
+       margin-top: 270px;
+     }
+
 
 
 }
@@ -132,7 +163,7 @@ video {
 
 @media screen and (max-width: 320px) {
         body {
-               font-size: 85%;
+               font-size: 90%;
          }
 
          .logo {
@@ -143,14 +174,8 @@ video {
            border-color: #6B5D4D #6B5D4D #429398 #6B5D4D;
          }
 
-         .logoimage {
-           width: 20%;
-           height: 20%;
-           margin: 3%;
-         }
-
          .logotext {
-           font-size: 1.65em;
+           font-size: 1.5em;
            transform: scale(0.5,1);
            color: #FBEED3;
            font-family: 'Cinzel Decorative', serif;
@@ -163,6 +188,10 @@ video {
              padding: 5% 0 1% 0;
              text-align: center;
              background-color: #DFCDB4;
+         }
+
+         .icon-bar {
+           color: #FBEED3;
          }
 
          li {
