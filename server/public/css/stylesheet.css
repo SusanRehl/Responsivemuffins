@@ -109,17 +109,24 @@ video {
 
      .logo {
        align: center;
-       margin-bottom: -8%;
        border-style: solid;
        border-color: #6B5D4D #6B5D4D #429398 #6B5D4D;
      }
 
+     .logotext {
+       margin-top: -80px;
+     }
+
      .navbar-right {
-       margin: 61px -10px 0 0;
-       padding: 5px 0 5px 20px;
-       background-color: #DFCDB4;
-       border-style: solid;
-       border-color: #DFCDB4 #DFCDB4 #429398 #DFCDB4;
+         margin: -5% -1% 0 -8%;
+         padding: 7% 0 0 0;
+         background-color: #DFCDB4;
+         border-style: solid;
+         border-color: #DFCDB4 #DFCDB4 #429398 #DFCDB4;
+     }
+
+     .navbar-toggle {
+       margin: 6% 6% 0 0;
      }
 
      .icon-bar {
@@ -127,8 +134,7 @@ video {
      }
 
      li {
-       width: 20px;
-       margin: 0 -20px 0 15px;
+       margin: 0 0 2% 47%;
      }
 
      a {
@@ -175,7 +181,7 @@ video {
          .logo {
            align: center;
            padding-bottom: 8%;
-           margin-bottom: -8%;
+           /*margin-bottom: -8%;*/
            border-style: solid;
            border-color: #6B5D4D #6B5D4D #429398 #6B5D4D;
          }
@@ -185,23 +191,27 @@ video {
          }
 
          .logotext {
-           font-size: 1.5em;
+           font-size: 1.75em;
            transform: scale(0.5,1);
            color: #FBEED3;
            font-family: 'Cinzel Decorative', serif;
            width: 350px;
-           margin: -15% 0 0 0;
+           margin: -25% 0 -5% 0;
+           text-align: center;
          }
 
          .navbar-right {
-             margin: 8% 0 5% 0;
-             padding: 5% 0 1% 0;
-             text-align: center;
+             margin: -1% -5% 0 -8%;
+             padding: 5% 0 0 0;
              background-color: #DFCDB4;
          }
 
+         .navbar-toggle {
+           margin-top: 10%;
+         }
+
          li {
-           margin: 0 0 7% 0;
+           margin: 0 0 7% 47%;
          }
 
          a {
