@@ -24,6 +24,10 @@ main {
   padding-bottom: 20px;
 }
 
+.logoimage {
+  height: 120px;
+}
+
 .logotext {
   font-size: 2em;
   transform: scale(0.5,1);
@@ -172,6 +176,10 @@ video {
            margin-bottom: -8%;
            border-style: solid;
            border-color: #6B5D4D #6B5D4D #429398 #6B5D4D;
+         }
+
+         .logoimage {
+           height: 85px;
          }
 
          .logotext {
