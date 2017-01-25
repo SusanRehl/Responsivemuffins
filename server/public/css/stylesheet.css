@@ -103,7 +103,7 @@ video {
 }
 
 
-/* Tablet Styles */
+/* TABLET STYLES ------------------------------------------------------------------------------------------- */
 
 @media screen and (max-width: 768px) {
 
@@ -118,14 +118,16 @@ video {
        margin: 61px -10px 0 0;
        padding: 5px 0 5px 20px;
        background-color: #DFCDB4;
-       height: 40px;
        border-style: solid;
        border-color: #DFCDB4 #DFCDB4 #429398 #DFCDB4;
      }
 
+     .icon-bar {
+       background-color: #FBEED3;
+     }
+
      li {
        width: 20px;
-       /*padding: -200px;*/
        margin: 0 -20px 0 15px;
      }
 
@@ -163,7 +165,7 @@ video {
 
 
 
-/* Phone Styles */
+/* PHONE STYLES  -------------------------------------------------------------------------------------- */
 
 @media screen and (max-width: 320px) {
         body {
@@ -196,10 +198,6 @@ video {
              padding: 5% 0 1% 0;
              text-align: center;
              background-color: #DFCDB4;
-         }
-
-         .icon-bar {
-           color: #FBEED3;
          }
 
          li {

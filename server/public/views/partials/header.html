@@ -2,22 +2,11 @@
 
     <div class="logo">
 
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-     <!-- <picture> -->
-        <!-- Smallest viewport size   -->
-       <!-- <source srcset = "/assets/mmlogoSM.png" media="(max-width: 320px)"> -->
-       <!-- Large viewport size  -->
-       <!-- <source srcset = "/assets/mmlogoLG.png" media="(max-width: 960px)"> -->
-       <!-- fallback content for non-JS or non-media-query-supporting browser -->
-       <!-- <img srcset="/assets/mmlogoLG.png" alt="Logo Monumental Muffins"/> -->
-       <!-- <noscript> -->
-         <!-- <img srcset="/assets/mmlogoLG.png" alt="Logo Monumental Muffins"> -->
-       <!-- </noscript> -->
-     <!-- </picture> -->
 
      <picture>
          <!-- Smallest viewport size   -->
@@ -27,16 +16,15 @@
          <!-- fallback content for non-JS or non-media-query-supporting browser -->
        <img  class="logoimage" srcset="/assets/mmlogo.svg" alt="Logo Monumental Muffins"/>
          <noscript>
-           <img class="logoimage" srcset="/assets/mmlogo.svg" alt="Logo Monumental Muffins">
+           <img class="logoimage" srcset="/assets/mmlogo.svg" onerror="this.onerror=null; this.src='mmlogoLG.png'" alt="Logo Monumental Muffins">
          </noscript>
-
      </picture>
 
      <p class="logotext">Monumental Muffins</p>
   </div> <!-- end logo div -->
 
     <div ng-controller="navCtrl">
-      <div class="collapse navbar-collapse" id="myNavbar">
+      <div class="collapse navbar-collapse">
         <ul class="navbar-nav navbar-right">  <!-- one line, flush right -->
           <li><a ng-class="{ active: isActive('/home') }" href='/home'>Home</a></li>
           <li><a ng-class="{ active: isActive('/muffins') }" href='/muffins'>Muffins</a></li>
