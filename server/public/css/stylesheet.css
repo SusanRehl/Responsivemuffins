@@ -14,10 +14,6 @@ body {
   font-family: 'BenchNine', sans-serif;
 }
 
-main {
-  margin-top: 130px;
-}
-
 .logo {
   align: left;
   background-color: #6B5D4D;
@@ -39,6 +35,10 @@ main {
 
 ul {
   list-style: none;
+}
+
+.navbar-fixed-top, .navbar-fixed-bottom {
+   position: relative;
 }
 
 .navbar-right {
@@ -160,10 +160,13 @@ video {
         margin: 0 -20px;
      }
 
-    main {
+    /*main {
        margin-top: 270px;
-     }
+     }*/
 
+     /*.navbar-fixed-top, .navbar-fixed-bottom {
+         position: relative;
+      }*/
 
 
 }
@@ -181,7 +184,6 @@ video {
          .logo {
            align: center;
            padding-bottom: 8%;
-           /*margin-bottom: -8%;*/
            border-style: solid;
            border-color: #6B5D4D #6B5D4D #429398 #6B5D4D;
          }
@@ -234,9 +236,9 @@ video {
             padding: 5% 2% 5% 0;
          }
 
-         main {
-           margin-top: 330px;
-         }
+        /*.navbar-fixed-top, .navbar-fixed-bottom {
+            position: relative;
+         }*/
 
    }
 
