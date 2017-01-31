@@ -27,6 +27,13 @@ myApp.config(["$routeProvider", "$locationProvider", function($routeProvider, $l
 
 
 	myApp.controller("navCtrl", ["$scope", "$location", function($scope, $location){ // controller for navigation
+
+		$(document).on('click.nav','.navbar-collapse.in',function(e) {  // collapses navbar after click
+		    if( $(e.target).is('a') ) {
+		        $(this).removeClass('in').addClass('collapse');
+		    }
+		});
+
 			$scope.isActive = function(route) {
 			  return route === $location.path();
 			};

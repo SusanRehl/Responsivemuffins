@@ -140,19 +140,16 @@ video {
      a {
          color: #6B5D4D;
          margin: 0 -20px;
-         /*padding: 5px -200px;*/
      }
 
      a:active {
        color: #6B5D4D;
        margin: 0 -20px;
-       /*padding: 5px -200px;*/
      }
 
      a:focus {
        color: #429398;
        margin: 0 -20px;
-       /*padding: 5px -200px;*/
      }
 
      .active {
@@ -160,13 +157,6 @@ video {
         margin: 0 -20px;
      }
 
-    /*main {
-       margin-top: 270px;
-     }*/
-
-     /*.navbar-fixed-top, .navbar-fixed-bottom {
-         position: relative;
-      }*/
 
 
 }
@@ -235,10 +225,6 @@ video {
             color: #429398;
             padding: 5% 2% 5% 0;
          }
-
-        /*.navbar-fixed-top, .navbar-fixed-bottom {
-            position: relative;
-         }*/
 
    }
 
