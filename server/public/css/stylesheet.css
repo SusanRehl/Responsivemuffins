@@ -14,6 +14,12 @@ body {
   font-family: 'BenchNine', sans-serif;
 }
 
+h2 {
+  color: #439398;
+  font-size: 2em;
+  padding-top: 50px;
+}
+
 h4 {
   margin: 0;
 }
@@ -103,10 +109,34 @@ video {
    max-width: 100%;
 }
 
+.jumbotron {
+  margin: -20px 0 0 0;
+  /*background: #000 url("images/banner.jpg") no-repeat center center;
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    color: #FFF; // change text color*/
+}
+
+.content {
+  background-color: #DFCDB4;
+  margin: -10% -5%;
+  padding: 7% 15% 15% 15%;
+}
+
+.bigimage {
+  box-shadow: 5px 5px 3px #6B5D4D;
+}
+
+.firstpar {
+  margin-top: 20px;
+}
+
 .footer {
   background-color: #6B5D4D;
   color: #fbeed3;
-  padding: 1%;
+  padding: 3% 10%;
   font-size: 80%;
 }
 
@@ -115,8 +145,18 @@ video {
 
 @media screen and (max-width: 768px) {
 
+     h2 {
+       text-align: center;
+       margin-top: 0;
+     }
+
      h5 {
        margin-top: 3%;
+     }
+
+     .bigimage {
+       display: block;
+       margin: auto;
      }
 
      .logo {
@@ -238,6 +278,9 @@ video {
             padding: 5% 2% 5% 0;
          }
 
+         h2 {
+           margin-top: -40px;
+         }
    }
 
 /* Phone retina images */

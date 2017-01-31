@@ -1,25 +1,33 @@
 <div ng-controller = "aboutController">
 
-  <main>
+  <main class="content">
 
        <section>
          <h2> About Us </h2>
        </section>
 
        <section>
-         <picture>
-            <!-- Smallest viewport size   -->
-           <source srcset = "/assets/mmshop275.png" media="(max-width: 320px)">
-           <!-- Large viewport size  -->
-           <source srcset = "/assets/mmshop.png" media="(max-width: 960px)">
-           <!-- fallback content for non-JS or non-media-query-supporting browser -->
-           <img srcset="/assets/mmshop.png" alt="Banana Nut Muffin"/>
-           <noscript>
-             <img srcset="/assets/mmshop.png" alt="Banana Nut Muffin">
-           </noscript>
-         </picture>
-         <p>Founded in 2004, Monumental Muffins began as a very humble catering venture for family and friends, operating out of the home of Jane Doe, our founder.</p>
-         <p>Jane moved the company to our current location in 2009, and focused solely on creating truly MONUMENTAL muffins!</p>
+         <div class="row">
+             <div class="col-md-8">
+                   <picture>
+                      <!-- Smallest viewport size   -->
+                      <source srcset = "/assets/mmshop275.png" media="(max-width: 320px)">
+                      <!-- Large viewport size  -->
+                      <source srcset = "/assets/mmshop.png" media="(max-width: 960px)">
+                      <!-- fallback content for non-JS or non-media-query-supporting browser -->
+                      <img class="bigimage" srcset="/assets/mmshop.png" alt="Banana Nut Muffin"/>
+                      <noscript>
+                         <img class="bigimage" srcset="/assets/mmshop.png" alt="Banana Nut Muffin">
+                      </noscript>
+                  </picture>
+              </div> <!-- end col 1 -->
+              <div class="col-md-4">
+                  <p class="firstpar">In 2004, Muffy Baker started Monumental Muffins to provide fresh, healthy muffins, made of all-natural ingredients to her catering clientele.</p>
+                  <p>The muffins were a hit, and Muffy began to add new flavors and perfect her recipes to include only the finest ingredients.</p>
+                  <p>Since the muffin venture continued to grow, Muffy moved the company to our current location in 2009, ended her other catering business, and focused solely on creating truly MONUMENTAL muffins!</p>
+                  <p>Come by, and try some fresh-baked, delicious muffins!</p>
+              </div> <!-- end col 2 -->
+          </div> <!-- end row -->
        </section>
 
   </main> <!-- end main -->
