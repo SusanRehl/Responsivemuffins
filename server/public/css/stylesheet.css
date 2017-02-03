@@ -109,14 +109,32 @@ video {
    max-width: 100%;
 }
 
-.jumbotron {
+/*.jumbotron {
   margin: -20px 0 0 0;
-  /*background: #000 url("images/banner.jpg") no-repeat center center;
-    background-size: 100% 100%;
+  background: url("/assets/muffinsbeautyLG.jpg") no-repeat center center;
+  background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -webkit-background-size: 100% 100%;
     -o-background-size: 100% 100%;
-    color: #FFF; // change text color*/
+    color: #FFF; // change text color
+}*/
+
+.jumbotron {
+    margin: -62px 0 -100px 0;
+    padding-bottom: -50px;
+    background-image: url("/assets/muffinsbeautyLG.jpg");
+    background-position: 0% 25%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    height: 440px;
+}
+
+.contenthome {
+  background-color: #DFCDB4;
+  margin: -12% -5%;
+  padding: 0 0 15% 15%;
 }
 
 .content {
@@ -276,6 +294,16 @@ video {
          .active {
             color: #429398;
             padding: 5% 2% 5% 0;
+         }
+
+         .jumbotron {
+           margin: -20px 0 0 0;
+           background: #000 url("/assets/muffinsbeautySM.jpg") no-repeat center center;
+             background-size: 100% 100%;
+             -moz-background-size: 100% 100%;
+             -webkit-background-size: 100% 100%;
+             -o-background-size: 100% 100%;
+             color: #FFF; // change text color
          }
 
          h2 {
