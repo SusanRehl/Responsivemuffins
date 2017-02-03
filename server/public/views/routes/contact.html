@@ -1,33 +1,39 @@
 <div ng-controller = "contactController">
 
-  <main>
+  <main class="content">
     <section>
       <h2> Contact and Locate Us </h2>
     </section>
 
     <section>
-      <picture>
-         <!-- Smallest viewport size   -->
-        <source srcset = "/assets/map275.png" media="(max-width: 320px)">
-        <!-- Large viewport size  -->
-        <source srcset = "/assets/map.png" media="(max-width: 960px)">
-        <!-- fallback content for non-JS or non-media-query-supporting browser -->
-        <img srcset="/assets/map.png" alt="Banana Nut Muffin"/>
-        <noscript>
-          <img srcset="/assets/map.png" alt="Banana Nut Muffin">
-        </noscript>
-      </picture>
-      <p>555 Main Street</p>
-      <p>Hometown, MN 55555</p>
-      <p></p>
-      <p>555-555-5555</p>
-      <p></p>
-      <a href="mailto:jane@monumentalmuffins.com">jane@monumental muffins.com</a>
-      <p></p>
-      <h3>Hours:</h3>
-      <p>Tuesday - Saturday: 7:30 am - 5:30 pm</p>
-      <p>Sunday: 9:00 am - 1:00 pm</p>
-      <p>Closed Monday</p>
+      <div class="row">
+       <div class="col-md-8">
+         <picture>
+            <!-- Smallest viewport size   -->
+            <source srcset = "/assets/map275.png" media="(max-width: 320px)">
+           <!-- Large viewport size  -->
+           <source srcset = "/assets/map.png" media="(max-width: 960px)">
+           <!-- fallback content for non-JS or non-media-query-supporting browser -->
+           <img srcset="/assets/map.png" alt="Monumental Muffins Map"/>
+           <noscript>
+             <img srcset="/assets/map.png" alt="Monumental Muffins Map">
+           </noscript>
+         </picture>
+       </div> <!-- end col 1 -->
+       <div class="col-md-4">
+         <p class="firstpar">555 Main Street</p>
+         <p>Hometown, MN 55555</p>
+         <p></p>
+         <p>555-555-5555</p>
+         <p></p>
+         <a href="mailto:muffy@monumentalmuffins.com">muffy@monumental muffins.com</a>
+         <p></p>
+         <h3>Hours:</h3>
+         <p>Tuesday - Saturday: 7:30 am - 5:30 pm</p>
+         <p>Sunday: 9:00 am - 1:00 pm</p>
+         <p>Closed Monday</p>
+       </div> <!-- end col 2 -->
+     </div> <!-- end row -->
     </section>
 
   </main> <!-- end main -->

@@ -98,7 +98,9 @@ a:focus {
 }
 
 /* Other anchor tag styles */
-
+main a {
+  color: #429398;
+}
 
 /* End anchor tag styles */
 
@@ -232,6 +234,10 @@ video {
      .active {
         color: #429398;
         margin: 0 -20px;
+     }
+
+     main a {
+       margin-left: 0;
      }
 
      .jumbotron {
