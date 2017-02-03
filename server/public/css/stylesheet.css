@@ -109,16 +109,6 @@ video {
    max-width: 100%;
 }
 
-/*.jumbotron {
-  margin: -20px 0 0 0;
-  background: url("/assets/muffinsbeautyLG.jpg") no-repeat center center;
-  background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    -webkit-background-size: 100% 100%;
-    -o-background-size: 100% 100%;
-    color: #FFF; // change text color
-}*/
-
 .jumbotron {
     margin: -62px 0 -100px 0;
     padding-bottom: -50px;
@@ -129,6 +119,23 @@ video {
     color: white;
     text-shadow: black 0.3em 0.3em 0.3em;
     height: 440px;
+}
+
+.jumbohead1 {
+  font-size: 2.25em;
+  transform: scale(0.5,1);
+  color: #FBEED3;
+  font-family: 'Cinzel Decorative', cursive;
+  margin: 5px 0 0 520px;
+}
+
+.jumbohead2 {
+  font-size: 1.75em;
+  transform: scale(0.5,1);
+  color: #FBEED3;
+  font-family: 'Cinzel Decorative', cursive;
+  margin: 100px 0 0 600px;
+  width: 1000px;
 }
 
 .contenthome {
@@ -227,7 +234,25 @@ video {
         margin: 0 -20px;
      }
 
+     .jumbotron {
+         margin: -90px 0 -210px 0;
+    }
 
+    .jumbohead1 {
+      font-size: 1.5em;
+      margin: 6% 0 0 40%;
+    }
+
+    .jumbohead2 {
+      font-size: 1.25em;
+      margin: 7% 0 0 33%;
+      width: 100%;
+    }
+
+    .contenthome {
+      padding: 0 10% 5% 10%;
+      margin: 0;
+    }
 
 }
 
@@ -297,19 +322,38 @@ video {
          }
 
          .jumbotron {
-           margin: -20px 0 0 0;
-           background: #000 url("/assets/muffinsbeautySM.jpg") no-repeat center center;
-             background-size: 100% 100%;
-             -moz-background-size: 100% 100%;
-             -webkit-background-size: 100% 100%;
-             -o-background-size: 100% 100%;
-             color: #FFF; // change text color
-         }
+           margin: -11% 0 -9% 0;
+           background-image: url("/assets/muffinsbeautySM.jpg");
+           height: 200px;
+            }
+
+        .jumbohead1 {
+            font-size: 1em;
+            margin: 100px 0 0 -15px;
+            text-align: center;
+            background-color: #B0A18F;
+            text-shadow: none;
+            width: 350px;
+          }
+
+        .jumbohead2 {
+            font-size: 0.85em;
+            margin: 0 0 0 -15px;
+            text-align: center;
+            background-color: #B0A18F;
+            text-shadow: none;
+            width: 350px;
+          }
+
+          .contenthome {
+              padding: 0 10% 5% 10%;
+              margin: 0;
+            }
 
          h2 {
            margin-top: -40px;
          }
-   }
+   } /* end phone media query */
 
 /* Phone retina images */
    @media
