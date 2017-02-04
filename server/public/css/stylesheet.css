@@ -2,7 +2,7 @@
   width: device-width;
 }
 
-/* Desktop Styles */
+/* Desktop/Large Screen Styles */
 
 html {
   font-size: 20px;
@@ -156,7 +156,7 @@ video {
   box-shadow: 5px 5px 3px #6B5D4D;
 }
 
-.firstpar {
+.price {
   margin-top: 20px;
 }
 
@@ -168,7 +168,7 @@ video {
 }
 
 
-/* TABLET STYLES ------------------------------------------------------------------------------------------- */
+/* TABLET / MEDIUM SCREEN STYLES ------------------------------------------------------------------------------------------- */
 
 @media screen and (max-width: 768px) {
 
@@ -260,12 +260,34 @@ video {
       margin: 0;
     }
 
+    .muffincontent {
+      text-align: center;
+    }
+
+    .ghost-button {
+       color: #429398;
+       border: 1px solid #429398;
+       background-color: #DFCDB4;
+       font-size: 1em;
+       padding: 7px 12px;
+       margin: -8% 0 0 35%;
+       text-decoration: none;
+       min-width: 120px;
+     }
+
+     .price {
+        text-align: left;
+        margin-left: 28%;
+     }
+
+
+
 }
 
 
 
 
-/* PHONE STYLES  -------------------------------------------------------------------------------------- */
+/* PHONE / SMALL SCREEN STYLES  -------------------------------------------------------------------------------------- */
 
 @media screen and (max-width: 320px) {
         body {
@@ -359,6 +381,22 @@ video {
          h2 {
            margin-top: -40px;
          }
+
+         .ghost-button {
+            padding: 7px 7px;
+            margin: 2% 0 0 32%;
+            text-decoration: none;
+            min-width: 90px;
+            display: inline-block;
+            align: center;
+            text-align: center;
+          }
+
+          .price {
+             text-align: center;
+             margin-left: 0;
+          }
+
    } /* end phone media query */
 
 /* Phone retina images */
