@@ -7,7 +7,8 @@
     </section>
 
     <section class="muffincontent">
-      <div class="row">
+      <div ng-controller="modalCtrl as $ctrl">  
+        <div class="row">
           <div class="col-md-4">
             <h3>Pumpkin Chocolate Chip Muffins</h3>
             <picture>
@@ -21,8 +22,14 @@
                 <img class="bigimage" srcset="/assets/pumpkinmuffin.png" alt="Banana Nut Muffin">
               </noscript>
             </picture>
-            <p class="price">Price: $24 per dozen<button class="visible-xs-block ghost-button">More Info</button></p>
+            <p class="price">Price: $24 per dozen<button class="visible-xs-block ghost-button" ng-click="$ctrl.pumpkin('lg')">More Info</button></p>
             <p class="visible-lg-block description">A dense, very moist muffin with a mild pumpkin and cinnamon flavor, enhanced by semi-sweet chocolate chips. <br>12 oz per muffin. Total fat: 6g. Total calories: 300.</p>
+
+            <!-- <div ng-click="$ctrl.unimed('lg')">
+              <img class="designimageicon" src="images/unimedlogoICON.png">
+            </div> -->
+
+
           </div>  <!-- end col 1 -->
 
           <div class="col-md-4">
@@ -58,7 +65,7 @@
             <p class="price">Price: $20 per dozen<button class="visible-xs-block ghost-button">More Info</button></p>
             <p class="visible-lg-block description">Fluffy, light crumbly muffin with light nutmeg flavor and butter cinnamon topping. <br>9 oz per muffin. Total fat: 5g. Total calories: 230.</p>
           </div>  <!-- end col 3 -->
-       </div>  <!-- end row 1 -->
+        </div>  <!-- end row 1 -->
 
        <div class="row">
            <div class="col-md-4">
@@ -98,6 +105,23 @@
         <div class="col-md-4">
         </div>   <!-- end col 3 -->
      </div>  <!-- end row 2 -->
+
+     <!-- MODAL SCRIPTS -->
+               <script type="text/ng-template" id="pumpkin.html">
+               <!-- BODY -->
+                   <div class="modal-body" id="modal-body">
+                     <p>A dense, very moist muffin with a mild pumpkin and cinnamon flavor, enhanced by semi-sweet chocolate chips.
+                       <br>12 oz per muffin. Total fat: 6g. Total calories: 300.</p>
+                   </div>
+               <!-- FOOTER -->
+                   <div class="modal-footer">
+                       <a class="ghost-button" ng-click="$ctrl.ok()">Close</a>
+                   </div>
+               </script>
+
+
+
+   </div>  <!-- end controller -->
 
   </main> <!-- end main -->
 

@@ -1,4 +1,4 @@
-var myApp = angular.module("myApp", ["ngRoute"]);
+var myApp = angular.module("myApp", ["ngRoute", "ui.bootstrap", "ngAnimate"]);
 
 myApp.config(["$routeProvider", "$locationProvider", function($routeProvider, $locationProvider) {   //  controller for routes
 	console.log("in scripts in config function");
@@ -55,3 +55,91 @@ myApp.config(["$routeProvider", "$locationProvider", function($routeProvider, $l
   myApp.controller("muffinsController", ["$scope", function($scope){
 
   }]);
+
+	// UIB MODAL FOR DESIGN PAGE
+
+	angular.module('myApp').controller('modalCtrl', function ($uibModal, $log) {
+	  var $ctrl = this;
+	  $ctrl.items = ['item1', 'item2', 'item3'];
+
+	  $ctrl.animationsEnabled = true;
+
+	  $ctrl.pumpkin = function (size) {
+	    var modalInstance = $uibModal.open({
+	      animation: $ctrl.animationsEnabled,
+	      // ariaLabelledBy: 'modal-title',
+	      ariaDescribedBy: 'modal-body',
+	      templateUrl: 'pumpkin.html',
+	      controller: 'ModalInstanceCtrl',
+	      controllerAs: '$ctrl',
+	      windowClass: 'app-modal-window',
+	      size: size,
+	      resolve: {
+	        items: function () {
+	          return $ctrl.items;
+	        }
+	      }
+	    });
+	  // };
+		 // end pumpkin
+
+		modalInstance.result.then(function (selectedItem) {
+			$ctrl.selected = selectedItem;
+				}, function () {
+					$log.info('Modal dismissed at: ' + new Date());
+				});
+
+	}; // end last muffin
+
+	$ctrl.toggleAnimation = function () {
+		$ctrl.animationsEnabled = !$ctrl.animationsEnabled;
+		};
+
+
+
+});  //  end modalCtrl
+
+angular.module('myApp').controller('ModalInstanceCtrl', function ($uibModalInstance, items) {
+  var $ctrl = this;
+  $ctrl.items = items;
+  $ctrl.selected = {
+    item: $ctrl.items[0]
+  };
+
+  $ctrl.ok = function () {
+    $uibModalInstance.close($ctrl.selected.item);
+  };
+
+  $ctrl.cancel = function () {
+    $uibModalInstance.dismiss('cancel');
+  };
+}); // end ModalInstanceCtrl
+
+angular.module('myApp').component('modalComponent', {
+  templateUrl: 'myModalContent.html',
+  bindings: {
+    resolve: '<',
+    close: '&',
+    dismiss: '&'
+  },
+  controller: function () {
+    var $ctrl = this;
+
+    $ctrl.$onInit = function () {
+      $ctrl.items = $ctrl.resolve.items;
+      $ctrl.selected = {
+        item: $ctrl.items[0]
+      };
+    };
+
+    $ctrl.ok = function () {
+      $ctrl.close({$value: $ctrl.selected.item});
+    };
+
+    $ctrl.cancel = function () {
+      $ctrl.dismiss({$value: 'cancel'});
+    };
+  }
+}); // end modalComponent
+
+// end UIB Modal
