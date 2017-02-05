@@ -148,7 +148,7 @@ video {
 
 .content {
   background-color: #DFCDB4;
-  margin: -10% -5%;
+  margin: -10% 0;
   padding: 7% 15% 15% 15%;
 }
 
@@ -183,7 +183,7 @@ video {
 
      .bigimage {
        display: block;
-       margin: auto;
+       margin: 0 auto 20px auto;
      }
 
      .logo {
@@ -197,11 +197,11 @@ video {
      }
 
      .navbar-right {
-         margin: -5% -1% 0 -8%;
+         margin: -6% -5% 0 -8%;
          padding: 7% 0 0 0;
-         background-color: #DFCDB4;
+         background-color: #FBEED3;
          border-style: solid;
-         border-color: #DFCDB4 #DFCDB4 #429398 #DFCDB4;
+         border-color: #FBEED3 #FBEED3 #429398 #FBEED3;
      }
 
      .navbar-toggle {
@@ -264,11 +264,22 @@ video {
       text-align: center;
     }
 
-    .ghost-button {
+    .ghost-button  {
        color: #429398;
        border: 1px solid #429398;
        background-color: #DFCDB4;
        font-size: 1em;
+       padding: 7px 12px;
+       margin: -9% 0 0 35%;
+       text-decoration: none;
+       min-width: 120px;
+     }
+
+     .ghost-button:active, .ghost-button:hover {
+       font-size: 1em;
+       color: #6B5D4D;
+       border: 1px solid #429398;
+       background-color: #DFCDB4;
        padding: 7px 12px;
        margin: -8% 0 0 35%;
        text-decoration: none;
@@ -280,7 +291,17 @@ video {
         margin-left: 28%;
      }
 
-
+     /*  UIB Modal styling for Muffins page */
+     .app-modal-window .modal-dialog {
+       width: 300px;
+       position: absolute;
+       top: 50%;
+       /*half of the modal height*/
+       margin-top: -100px;
+       left: 50%;
+       /*half of the modal width*/
+       margin-left: -20%;
+     }
 
 }
 
@@ -316,9 +337,8 @@ video {
          }
 
          .navbar-right {
-             margin: -1% -5% 0 -8%;
+             margin: -2% -5% 0 -8%;
              padding: 5% 0 0 0;
-             background-color: #DFCDB4;
          }
 
          .navbar-toggle {
@@ -384,6 +404,20 @@ video {
 
          .ghost-button {
             padding: 7px 7px;
+            margin: 2% 0 0 30%;
+            text-decoration: none;
+            min-width: 90px;
+            display: inline-block;
+            align: center;
+            text-align: center;
+          }
+
+          .ghost-button:active, .ghost-button:hover {
+            font-size: 1em;
+            color: #6B5D4D;
+            border: 1px solid #429398;
+            background-color: #DFCDB4;
+            padding: 7px 7px;
             margin: 2% 0 0 32%;
             text-decoration: none;
             min-width: 90px;
@@ -395,6 +429,18 @@ video {
           .price {
              text-align: center;
              margin-left: 0;
+          }
+
+          /*  UIB Modal styling for Muffins page */
+          .app-modal-window .modal-dialog {
+            width: 200px;
+            position: absolute;
+            top: 20%;
+            /*half of the modal height*/
+            margin-top: 0;
+            left: 18%;
+            /*half of the modal width*/
+            margin-left: 0;
           }
 
    } /* end phone media query */

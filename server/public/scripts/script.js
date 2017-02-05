@@ -67,7 +67,6 @@ myApp.config(["$routeProvider", "$locationProvider", function($routeProvider, $l
 	  $ctrl.pumpkin = function (size) {
 	    var modalInstance = $uibModal.open({
 	      animation: $ctrl.animationsEnabled,
-	      // ariaLabelledBy: 'modal-title',
 	      ariaDescribedBy: 'modal-body',
 	      templateUrl: 'pumpkin.html',
 	      controller: 'ModalInstanceCtrl',
@@ -80,8 +79,74 @@ myApp.config(["$routeProvider", "$locationProvider", function($routeProvider, $l
 	        }
 	      }
 	    });
-	  // };
-		 // end pumpkin
+	  };  // end pumpkin
+
+		$ctrl.banana = function (size) {
+			var modalInstance = $uibModal.open({
+				animation: $ctrl.animationsEnabled,
+				ariaDescribedBy: 'modal-body',
+				templateUrl: 'banana.html',
+				controller: 'ModalInstanceCtrl',
+				controllerAs: '$ctrl',
+				windowClass: 'app-modal-window',
+				size: size,
+				resolve: {
+					items: function () {
+						return $ctrl.items;
+					}
+				}
+			});
+		};  // end banana
+
+		$ctrl.french = function (size) {
+			var modalInstance = $uibModal.open({
+				animation: $ctrl.animationsEnabled,
+				ariaDescribedBy: 'modal-body',
+				templateUrl: 'french.html',
+				controller: 'ModalInstanceCtrl',
+				controllerAs: '$ctrl',
+				windowClass: 'app-modal-window',
+				size: size,
+				resolve: {
+					items: function () {
+						return $ctrl.items;
+					}
+				}
+			});
+		};  // end french
+
+		$ctrl.blueberry = function (size) {
+			var modalInstance = $uibModal.open({
+				animation: $ctrl.animationsEnabled,
+				ariaDescribedBy: 'modal-body',
+				templateUrl: 'blueberry.html',
+				controller: 'ModalInstanceCtrl',
+				controllerAs: '$ctrl',
+				windowClass: 'app-modal-window',
+				size: size,
+				resolve: {
+					items: function () {
+						return $ctrl.items;
+					}
+				}
+			});
+		};  // end blueberry
+
+		$ctrl.oatmeal = function (size) {
+			var modalInstance = $uibModal.open({
+				animation: $ctrl.animationsEnabled,
+				ariaDescribedBy: 'modal-body',
+				templateUrl: 'oatmeal.html',
+				controller: 'ModalInstanceCtrl',
+				controllerAs: '$ctrl',
+				windowClass: 'app-modal-window',
+				size: size,
+				resolve: {
+					items: function () {
+						return $ctrl.items;
+					}
+				}
+			});
 
 		modalInstance.result.then(function (selectedItem) {
 			$ctrl.selected = selectedItem;
@@ -89,7 +154,7 @@ myApp.config(["$routeProvider", "$locationProvider", function($routeProvider, $l
 					$log.info('Modal dismissed at: ' + new Date());
 				});
 
-	}; // end last muffin
+	}; // end last muffin (Oatmeal)
 
 	$ctrl.toggleAnimation = function () {
 		$ctrl.animationsEnabled = !$ctrl.animationsEnabled;

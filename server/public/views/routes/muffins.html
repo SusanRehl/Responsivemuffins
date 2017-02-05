@@ -7,7 +7,7 @@
     </section>
 
     <section class="muffincontent">
-      <div ng-controller="modalCtrl as $ctrl">  
+      <div ng-controller="modalCtrl as $ctrl">
         <div class="row">
           <div class="col-md-4">
             <h3>Pumpkin Chocolate Chip Muffins</h3>
@@ -24,12 +24,6 @@
             </picture>
             <p class="price">Price: $24 per dozen<button class="visible-xs-block ghost-button" ng-click="$ctrl.pumpkin('lg')">More Info</button></p>
             <p class="visible-lg-block description">A dense, very moist muffin with a mild pumpkin and cinnamon flavor, enhanced by semi-sweet chocolate chips. <br>12 oz per muffin. Total fat: 6g. Total calories: 300.</p>
-
-            <!-- <div ng-click="$ctrl.unimed('lg')">
-              <img class="designimageicon" src="images/unimedlogoICON.png">
-            </div> -->
-
-
           </div>  <!-- end col 1 -->
 
           <div class="col-md-4">
@@ -45,7 +39,7 @@
                 <img class="bigimage" srcset="/assets/Banananutmuffin.jpg" alt="Banana Nut Muffin">
               </noscript>
             </picture>
-            <p class="price">Price: $22 per dozen<button class="visible-xs-block ghost-button">More Info</button></p>
+            <p class="price">Price: $22 per dozen<button class="visible-xs-block ghost-button" ng-click="$ctrl.banana('lg')">More Info</button></p>
             <p class="visible-lg-block description">Whole wheat for fiber, with moist banana, cinnamon, and organic walnuts. <br>10.5 oz per muffin. Total fat: 4g. Total calories: 250.</p>
           </div> <!-- end col 2 -->
 
@@ -62,7 +56,7 @@
                 <img class="bigimage" srcset="/assets/frenchpuff.png" alt="Banana Nut Muffin">
               </noscript>
             </picture>
-            <p class="price">Price: $20 per dozen<button class="visible-xs-block ghost-button">More Info</button></p>
+            <p class="price">Price: $20 per dozen<button class="visible-xs-block ghost-button" ng-click="$ctrl.french('lg')">More Info</button></p>
             <p class="visible-lg-block description">Fluffy, light crumbly muffin with light nutmeg flavor and butter cinnamon topping. <br>9 oz per muffin. Total fat: 5g. Total calories: 230.</p>
           </div>  <!-- end col 3 -->
         </div>  <!-- end row 1 -->
@@ -81,8 +75,8 @@
                  <img class="bigimage" srcset="/assets/blueberrymuffin.jpg" alt="Banana Nut Muffin">
              </noscript>
              </picture>
-            <p class="price">Price: $22 per dozen<button class="visible-xs-block ghost-button">More Info</button></p>
-            <p class="visible-lg-block description">Fresh organic lemon zest and juice brings out the powerful organic blueberry flavor.<br>9 oz per muffin. Total fat: 3g. Total calories: 210.</p>
+            <p class="price">Price: $22 per dozen<button class="visible-xs-block ghost-button" ng-click="$ctrl.blueberry('lg')">More Info</button></p>
+            <p class="visible-lg-block description">Fresh organic lemon zest and juice brings out the powerful flavor of fresh organic blueberries.<br>9 oz per muffin. Total fat: 3g. Total calories: 210.</p>
          </div>  <!-- end col 1 -->
 
         <div class="col-md-4">
@@ -98,7 +92,7 @@
                 <img class="bigimage" srcset="/assets/oatmealmuffin.png" alt="Banana Nut Muffin">
               </noscript>
              </picture>
-             <p class="price">Price: $23 per dozen<button class="visible-xs-block ghost-button">More Info</button></p>
+             <p class="price">Price: $23 per dozen<button class="visible-xs-block ghost-button" ng-click="$ctrl.oatmeal('lg')">More Info</button></p>
              <p class="visible-lg-block description">Whole wheat and oatmeal combine with organic walnuts, craisins, and Vietnamese cinnamon to make a filling, delicious muffin.<br>12 oz per muffin. Total fat: 3g. Total calories: 220.</p>
         </div>  <!-- end col 2 -->
 
@@ -119,6 +113,53 @@
                    </div>
                </script>
 
+               <script type="text/ng-template" id="banana.html">
+               <!-- BODY -->
+                   <div class="modal-body" id="modal-body">
+                     <p>Whole wheat for fiber, with moist banana, cinnamon, and organic walnuts.
+                       <br>10.5 oz per muffin. Total fat: 4g. Total calories: 250.</p>
+                   </div>
+               <!-- FOOTER -->
+                   <div class="modal-footer">
+                       <a class="ghost-button" ng-click="$ctrl.ok()">Close</a>
+                   </div>
+               </script>
+
+               <script type="text/ng-template" id="french.html">
+               <!-- BODY -->
+                   <div class="modal-body" id="modal-body">
+                     Fluffy, light crumbly muffin with light nutmeg flavor and butter cinnamon topping.
+                     <br>9 oz per muffin. Total fat: 5g. Total calories: 230.</p>
+                   </div>
+               <!-- FOOTER -->
+                   <div class="modal-footer">
+                       <a class="ghost-button" ng-click="$ctrl.ok()">Close</a>
+                   </div>
+               </script>
+
+               <script type="text/ng-template" id="blueberry.html">
+               <!-- BODY -->
+                   <div class="modal-body" id="modal-body">
+                     Fresh organic lemon zest and juice brings out the powerful flavor of fresh organic blueberries.
+                     <br>9 oz per muffin. Total fat: 3g. Total calories: 210.</p>
+                   </div>
+               <!-- FOOTER -->
+                   <div class="modal-footer">
+                       <a class="ghost-button" ng-click="$ctrl.ok()">Close</a>
+                   </div>
+               </script>
+
+               <script type="text/ng-template" id="oatmeal.html">
+               <!-- BODY -->
+                   <div class="modal-body" id="modal-body">
+                     Whole wheat and oatmeal combine with organic walnuts, craisins, and Vietnamese cinnamon to make a filling, delicious muffin.
+                     <br>12 oz per muffin. Total fat: 3g. Total calories: 220.</p>
+                   </div>
+               <!-- FOOTER -->
+                   <div class="modal-footer">
+                       <a class="ghost-button" ng-click="$ctrl.ok()">Close</a>
+                   </div>
+               </script>
 
 
    </div>  <!-- end controller -->
