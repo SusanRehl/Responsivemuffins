@@ -170,7 +170,7 @@ video {
 
 /* TABLET / MEDIUM SCREEN STYLES ------------------------------------------------------------------------------------------- */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-device-width: 800px) {
 
      h2 {
        text-align: center;
@@ -310,7 +310,7 @@ video {
 
 /* PHONE / SMALL SCREEN STYLES  -------------------------------------------------------------------------------------- */
 
-@media only screen and (max-device-width: 320px) {
+@media screen and (max-device-width: 641px) {
 /*@media screen and (max-width: 320px) {*/
         body {
                font-size: 90%;
