@@ -310,7 +310,8 @@ video {
 
 /* PHONE / SMALL SCREEN STYLES  -------------------------------------------------------------------------------------- */
 
-@media screen and (max-width: 320px) {
+@media only screen and (max-device-width: 320px) {
+/*@media screen and (max-width: 320px) {*/
         body {
                font-size: 90%;
          }
@@ -436,10 +437,8 @@ video {
             width: 200px;
             position: absolute;
             top: 20%;
-            /*half of the modal height*/
             margin-top: 0;
             left: 18%;
-            /*half of the modal width*/
             margin-left: 0;
           }
 
