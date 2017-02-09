@@ -9,8 +9,8 @@
     <section class="muffincontent">
       <div ng-controller="modalCtrl as $ctrl">
         <div class="row">
-          <div class="col-md-4">
-            <h3>Pumpkin Chocolate Chip Muffins</h3>
+          <div class="col-sm-6 col-lg-3 muffinheight">
+            <h3>Pumpkin Chocolate Chip</h3>
             <picture>
               <!-- Smallest viewport size   -->
               <source srcset = "/assets/pumpkinmuffin200.png" media="(max-device-width: 641px)">
@@ -22,12 +22,16 @@
                 <img class="bigimage" srcset="/assets/pumpkinmuffin.png" alt="Banana Nut Muffin">
               </noscript>
             </picture>
-            <p class="price">Price: $24 per dozen<button class="visible-xs-block ghost-button" ng-click="$ctrl.pumpkin('lg')">More Info</button></p>
-            <p class="visible-lg-block description">A dense, very moist muffin with a mild pumpkin and cinnamon flavor, enhanced by semi-sweet chocolate chips. <br>12 oz per muffin. Total fat: 6g. Total calories: 300.</p>
+            <div>
+            <p class="price">Price: $24 per dozen<p>
+            <button class="ghost-button hidden-sm hidden-md hidden-lg" ng-click="$ctrl.pumpkin('lg')">More Info</button>
+            <p class="hidden-xs description">Dense, very moist, with mild pumpkin and cinnamon flavor, enhanced by semi-sweet chocolate chips.
+              <br>12 oz per muffin. Total fat: 6g. Total calories: 300.</p>
+            </div>
           </div>  <!-- end col 1 -->
 
-          <div class="col-md-4">
-            <h3>Banana Walnut Muffins</h3>
+          <div class="col-sm-6 col-lg-3 muffinheight">
+            <h3>Banana Walnut</h3>
             <picture>
                <!-- Smallest viewport size   -->
               <source srcset = "/assets/Banananutmuffin200.jpg" media="(max-device-width: 641px)">
@@ -39,12 +43,16 @@
                 <img class="bigimage" srcset="/assets/Banananutmuffin.jpg" alt="Banana Nut Muffin">
               </noscript>
             </picture>
-            <p class="price">Price: $22 per dozen<button class="visible-xs-block ghost-button" ng-click="$ctrl.banana('lg')">More Info</button></p>
-            <p class="visible-lg-block description">Whole wheat for fiber, with moist banana, cinnamon, and organic walnuts. <br>10.5 oz per muffin. Total fat: 4g. Total calories: 250.</p>
+            <div>
+            <p class="price">Price: $22 per dozen</p>
+            <button class="ghost-button hidden-sm hidden-md hidden-lg" ng-click="$ctrl.banana('lg')">More Info</button>
+            <p class="hidden-xs description">Whole wheat for fiber, with moist banana, cinnamon, and organic walnuts.
+              <br>10.5 oz per muffin. Total fat: 4g. Total calories: 250.</p>
+            </div>
           </div> <!-- end col 2 -->
 
-          <div class="col-md-4">
-            <h3>French Spice Puffs</h3>
+          <div class="col-sm-6 col-lg-3 muffinheight">
+            <h3>French Spice</h3>
             <picture>
                <!-- Smallest viewport size   -->
               <source srcset = "/assets/frenchpuff200.png" media="(max-device-width: 641px)">
@@ -56,14 +64,17 @@
                 <img class="bigimage" srcset="/assets/frenchpuff.png" alt="Banana Nut Muffin">
               </noscript>
             </picture>
-            <p class="price">Price: $20 per dozen<button class="visible-xs-block ghost-button" ng-click="$ctrl.french('lg')">More Info</button></p>
-            <p class="visible-lg-block description">Fluffy, light crumbly muffin with light nutmeg flavor and butter cinnamon topping. <br>9 oz per muffin. Total fat: 5g. Total calories: 230.</p>
+            <div>
+            <p class="price">Price: $20 per dozen</p>
+            <button class="ghost-button hidden-sm hidden-md hidden-lg" ng-click="$ctrl.french('lg')">More Info</button>
+            <p class="hidden-xs description">Fluffy, light crumbly muffin with light nutmeg flavor and butter cinnamon topping.
+              <br>9 oz per muffin. Total fat: 5g. Total calories: 230.</p>
+            </div>
           </div>  <!-- end col 3 -->
-        </div>  <!-- end row 1 -->
 
-       <div class="row">
-           <div class="col-md-4">
-            <h3>Blueberry Muffins</h3>
+       <!-- <div class="row"> -->
+           <div class="col-sm-6 col-lg-3 muffinheight">
+            <h3>Blueberry</h3>
             <picture>
                <!-- Smallest viewport size   -->
               <source srcset = "/assets/blueberrymuffin200.jpg" media="(max-device-width: 641px)">
@@ -75,12 +86,16 @@
                  <img class="bigimage" srcset="/assets/blueberrymuffin.jpg" alt="Banana Nut Muffin">
              </noscript>
              </picture>
-            <p class="price">Price: $22 per dozen<button class="visible-xs-block ghost-button" ng-click="$ctrl.blueberry('lg')">More Info</button></p>
-            <p class="visible-lg-block description">Fresh organic lemon zest and juice brings out the powerful flavor of fresh organic blueberries.<br>9 oz per muffin. Total fat: 3g. Total calories: 210.</p>
+             <div>
+            <p class="price">Price: $22 per dozen</p>
+              <button class="ghost-button hidden-sm hidden-md hidden-lg" ng-click="$ctrl.blueberry('lg')">More Info</button>
+            <p class="hidden-xs description">Fresh organic lemon zest and juice brings out the powerful flavor of fresh organic blueberries.
+              <br>9 oz per muffin. Total fat: 3g. Total calories: 210.</p>
+            </div>
          </div>  <!-- end col 1 -->
 
-        <div class="col-md-4">
-            <h3>Hearty Oatmeal Walnut Craisin Muffins</h3>
+        <div class="col-sm-6 col-lg-3 muffinheight">
+            <h3>Hearty Oatmeal Walnut Craisin</h3>
             <picture>
                <!-- Smallest viewport size   -->
               <source srcset = "/assets/oatmealmuffin200.png" media="(max-device-width: 641px)">
@@ -92,19 +107,20 @@
                 <img class="bigimage" srcset="/assets/oatmealmuffin.png" alt="Banana Nut Muffin">
               </noscript>
              </picture>
-             <p class="price">Price: $23 per dozen<button class="visible-xs-block ghost-button" ng-click="$ctrl.oatmeal('lg')">More Info</button></p>
-             <p class="visible-lg-block description">Whole wheat and oatmeal combine with organic walnuts, craisins, and Vietnamese cinnamon to make a filling, delicious muffin.<br>12 oz per muffin. Total fat: 3g. Total calories: 220.</p>
+             <div>
+             <p class="price">Price: $23 per dozen</p>
+             <button class="ghost-button hidden-sm hidden-md hidden-lg" ng-click="$ctrl.oatmeal('lg')">More Info</button>
+             <p class="hidden-xs description">Whole wheat and oatmeal combine with organic walnuts, craisins, and Vietnamese cinnamon to make a filling, delicious muffin.
+               <br>12 oz per muffin. Total fat: 3g. Total calories: 220.</p>
+             </div>
         </div>  <!-- end col 2 -->
-
-        <div class="col-md-4">
-        </div>   <!-- end col 3 -->
-     </div>  <!-- end row 2 -->
+     </div>  <!-- end row -->
 
      <!-- MODAL SCRIPTS -->
                <script type="text/ng-template" id="pumpkin.html">
                <!-- BODY -->
                    <div class="modal-body" id="modal-body">
-                     <p>A dense, very moist muffin with a mild pumpkin and cinnamon flavor, enhanced by semi-sweet chocolate chips.
+                     <p>Dense, very moist with mild pumpkin and cinnamon flavor, enhanced by semi-sweet chocolate chips.
                        <br>12 oz per muffin. Total fat: 6g. Total calories: 300.</p>
                    </div>
                <!-- FOOTER -->

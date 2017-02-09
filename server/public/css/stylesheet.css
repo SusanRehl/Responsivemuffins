@@ -65,28 +65,28 @@ a {
     text-decoration: none;
     font-size: 1.2em;
     color: #B0A18F;
-    padding-right: 50px;
+    padding-right: 35%;
 }
 
 a:hover {
   text-decoration: none;
   font-size: 1.2em;
   color: #fbeed3;
-  padding-right: 50px;
+  padding-right: 35%;
 }
 
 a:active {
   text-decoration: none;
   font-size: 1.2em;
   color: #B0A18F;
-  padding-right: 50px;
+  padding-right: 35%;
 }
 
 a:focus {
   text-decoration: none;
   font-size: 1.2em;
   color: #429398;
-  padding-right: 50px;
+  padding-right: 35%;
 }
 
 .active {
@@ -94,7 +94,7 @@ a:focus {
    color: #429398;
    text-decoration: none;
    font-size: 1.2em;
-   padding-right: 50px;
+   padding-right: 35%;
 }
 
 /* Other anchor tag styles */
@@ -113,31 +113,26 @@ video {
 
 .jumbotron {
     margin: -62px 0 -100px 0;
-    padding-bottom: -50px;
+    padding: 0 0 -50px 0;
     background-image: url("/assets/muffinsbeautyLG.jpg");
-    background-position: 0% 25%;
+    background-position: 0% 0%;
     background-size: contain;
     background-repeat: no-repeat;
     color: white;
-    text-shadow: black 0.3em 0.3em 0.3em;
     height: 440px;
+    background-color: #DFCDB4;
 }
 
 .jumbohead1 {
-  font-size: 2.25em;
-  transform: scale(0.5,1);
+  font-size: 1em;
+  transform: scale(0.75,1);
   color: #FBEED3;
   font-family: 'Cinzel Decorative', cursive;
-  margin: 5px 0 0 520px;
-}
-
-.jumbohead2 {
-  font-size: 1.75em;
-  transform: scale(0.5,1);
-  color: #FBEED3;
-  font-family: 'Cinzel Decorative', cursive;
-  margin: 100px 0 0 600px;
-  width: 1000px;
+  margin: 5% 25%;
+  background-color: #429398;
+  padding: 1%;
+  text-align: center;
+  /*align: center;*/
 }
 
 .contenthome {
@@ -152,8 +147,16 @@ video {
   padding: 7% 15% 15% 15%;
 }
 
+.belowspace {
+  margin-bottom: 3%;
+}
+
 .bigimage {
   box-shadow: 5px 5px 3px #6B5D4D;
+}
+
+.muffinheight {
+  height: 500px;
 }
 
 .price {
@@ -170,7 +173,7 @@ video {
 
 /* TABLET / MEDIUM SCREEN STYLES ------------------------------------------------------------------------------------------- */
 
-@media screen and (max-device-width: 800px) {
+@media screen and (max-device-width: 768px) {
 
      h2 {
        text-align: center;
@@ -210,6 +213,8 @@ video {
 
      .icon-bar {
        background-color: #FBEED3;
+       /*padding-right: 50px;*/
+       align: left;
      }
 
      li {
@@ -244,17 +249,6 @@ video {
          margin: -90px 0 -210px 0;
     }
 
-    .jumbohead1 {
-      font-size: 1.5em;
-      margin: 6% 0 0 40%;
-    }
-
-    .jumbohead2 {
-      font-size: 1.25em;
-      margin: 7% 0 0 33%;
-      width: 100%;
-    }
-
     .contenthome {
       padding: 0 10% 5% 10%;
       margin: 0;
@@ -264,15 +258,20 @@ video {
       text-align: center;
     }
 
+    .muffinheight {
+      height: 420px;
+    }
+
     .ghost-button  {
        color: #429398;
        border: 1px solid #429398;
        background-color: #DFCDB4;
        font-size: 1em;
        padding: 7px 12px;
-       margin: -9% 0 0 35%;
+       margin: 0;
        text-decoration: none;
        min-width: 120px;
+       align: center;
      }
 
      .ghost-button:active, .ghost-button:hover {
@@ -281,14 +280,15 @@ video {
        border: 1px solid #429398;
        background-color: #DFCDB4;
        padding: 7px 12px;
-       margin: -8% 0 0 35%;
+       margin: 0;
        text-decoration: none;
        min-width: 120px;
+       align: center;
      }
 
      .price {
-        text-align: left;
-        margin-left: 28%;
+        text-align: center;
+        /*margin-left: 28%;*/
      }
 
      /*  UIB Modal styling for Muffins page */
@@ -306,12 +306,9 @@ video {
 }
 
 
-
-
 /* PHONE / SMALL SCREEN STYLES  -------------------------------------------------------------------------------------- */
 
 @media screen and (max-device-width: 641px) {
-/*@media screen and (max-width: 320px) {*/
         body {
                font-size: 90%;
          }
@@ -378,16 +375,7 @@ video {
 
         .jumbohead1 {
             font-size: 1em;
-            margin: 100px 0 0 -15px;
-            text-align: center;
-            background-color: #B0A18F;
-            text-shadow: none;
-            width: 350px;
-          }
-
-        .jumbohead2 {
-            font-size: 0.85em;
-            margin: 0 0 0 -15px;
+            margin: 80px auto 100px auto;
             text-align: center;
             background-color: #B0A18F;
             text-shadow: none;
@@ -405,7 +393,8 @@ video {
 
          .ghost-button {
             padding: 7px 7px;
-            margin: 2% 0 0 30%;
+            margin: 0;
+            /*margin: 2% 0 0 30%;*/
             text-decoration: none;
             min-width: 90px;
             display: inline-block;
@@ -419,12 +408,16 @@ video {
             border: 1px solid #429398;
             background-color: #DFCDB4;
             padding: 7px 7px;
-            margin: 2% 0 0 32%;
+            margin: 0;
             text-decoration: none;
             min-width: 90px;
             display: inline-block;
             align: center;
             text-align: center;
+          }
+
+          .muffinheight {
+            height: 330px;
           }
 
           .price {
@@ -443,16 +436,3 @@ video {
           }
 
    } /* end phone media query */
-
-/* Phone retina images */
-   @media
-      only screen and (-webkit-min-device-pixel-ratio: 1.5),
-      only screen and (min-device-pixel-ratio: 1.5) {
-
-
-           /*background-image: url(logo@2x.png);*/
-           /*-webkit-background-size: 75px 75px;*/
-           /*background-size: 75px 75px*/
-
-
-     }

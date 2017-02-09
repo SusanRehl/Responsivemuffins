@@ -17,5 +17,7 @@ Site is designed for phone, tablet and desktop.
 
 3. Learned a lot about standards for tablet and phone, ie collapsing the nav bar to a hamburger menu, making buttons large for fingers, and planning images and content well (and ensuring content is absolutely necessary).
 
+4. Also learned about customizing Bootstrap! I looked into changing the breakpoint at which the hamburger menu collapses by changing the @grid-float-breakpoint: from @screen-sm-min; to @screen-md-min; in order to get it to break at a higher pixel width, but I just really needed to decrease the padding of the navbar's <li>s in order to solve the problem.
+
 
 ## http://monumentalmuffins.herokuapp.com
