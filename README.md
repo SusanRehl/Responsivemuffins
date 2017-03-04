@@ -1,6 +1,6 @@
 # Responsive Muffins!
 
-A fictional muffin store's site, created to explore responsive design.
+Proof of concept, created to explore responsive design.
 Site is designed for phone, tablet and desktop.
 
 ## Responsive design techniques used include:
